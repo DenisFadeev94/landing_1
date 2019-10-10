@@ -284,5 +284,32 @@ h1, h2, h3, h4, h5 {
 
 /* Statistic */
 .statistic{
-  
+  background-color: #95e1d3;
+}
+
+.stat {
+   display: flex;
+}
+
+.statistic__item{
+  flex: 1 1 0;
+  border-left: 1px solid #fff;
+  text-align: center;
+  color: #fff;
+  padding: 70px 25px;
+}
+
+.statistic__item:last-child {
+    border-right: 1px solid #fff;
+}
+
+.stat__num {
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.stat__text{
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
