@@ -225,6 +225,7 @@ hr {
   font-weight: 700;
   font-size: 30px;
   color: #333;
+  text-transform: uppercase;
 }
 
 .section__title::after {
@@ -383,4 +384,71 @@ hr {
 /* What we do */
 .wedo {
   display: flex;
+}
+
+.wedo__item {
+  width: 50%;
+}
+
+/* Accordion */
+
+.accordion__item {
+  border: 1px solid #e5e5e5;
+  margin-top: 5px;
+}
+
+.accordion__header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: none;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion__header:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+    transform: translateX(-50%) rotate(135deg);
+
+}
+
+.active:after {
+    transform: translateX(-50%) rotate(-45deg);
+    
+}
+
+.accordion__icon {
+  padding-right: 10px;
+}
+
+.accordion__title {
+  text-transform: uppercase;
+  font-style: 14px;
+  font-weight: 700;
+  color: #333;
+}
+
+.accordion__content {
+  font-size: 15px;
+  color: #999;
+  font-family: 'Roboto', sans-serif;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion__content p{
+  margin: 15px;
 }
