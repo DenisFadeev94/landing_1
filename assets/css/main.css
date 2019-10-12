@@ -199,7 +199,7 @@ hr {
 
 .slider__inner {
   display: flex;
-  justify-content:  space-between;
+  justify-content: space-between;
 }
 
 /* Section */
@@ -356,7 +356,26 @@ hr {
 }
 
 /* Device */
+.device {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.device__item{
+  display: block;
+}
+
+.device__item--phone{
+  position:absolute;
+  bottom: -40px;
+  right: 0;
+  z-index: 1;
+}
 
 .section__device {
-  background: url(assets/images/device.png)
+  background: url(../images/device.png) center no-repeat;
+  background-size: cover;
+  padding-bottom: 0;
 }
