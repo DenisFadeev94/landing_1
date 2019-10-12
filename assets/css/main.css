@@ -354,3 +354,9 @@ hr {
   color: #999;
   font-family: 'Roboto', sans-serif;
 }
+
+/* Device */
+
+.section__device {
+  background: url(assets/images/device.png)
+}
