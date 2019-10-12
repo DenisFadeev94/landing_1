@@ -379,3 +379,8 @@ hr {
   background-size: cover;
   padding-bottom: 0;
 }
+
+/* What we do */
+.wedo {
+  display: flex;
+}
