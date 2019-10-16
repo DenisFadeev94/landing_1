@@ -426,7 +426,7 @@ hr {
 
 .active:after {
     transform: translateX(-50%) rotate(-45deg);
-    
+
 }
 
 .accordion__icon {
@@ -451,4 +451,9 @@ hr {
 
 .accordion__content p{
   margin: 15px;
+}
+
+/* Section--gray */
+.section--gray {
+  
 }
