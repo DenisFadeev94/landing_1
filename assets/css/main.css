@@ -444,6 +444,7 @@ hr {
   font-size: 15px;
   color: #999;
   font-family: 'Roboto', sans-serif;
+  font-style: italic;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
@@ -455,5 +456,77 @@ hr {
 
 /* Section--gray */
 .section--gray {
-  
+  background-color: #f8f8f8;
+}
+
+/* Quote */
+.quote {
+  padding: 0 110px;
+  position: relative;
+}
+
+.quote__item {
+  padding-left: 205px;
+  position: relative;
+}
+
+.quote__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.quote__text {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  color: #a7a7a7;
+}
+
+.quote__author{
+  font-size: 24px;
+  font-family: 'Kaushan Script', sans-serif;
+  font-style: italic;
+  color: #333;
+}
+
+.quote__author::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin-right: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: grey;
+    font-size: 25px;
+    transition: 0.6s ease;
+    z-index: 1;
+}
+.prev {
+  left: -30px;
+}
+
+.next {
+    right: -30px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
