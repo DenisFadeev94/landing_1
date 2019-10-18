@@ -215,7 +215,7 @@
   </div>
 </section>
 
-<section class="section section section--gray">
+<section class="section section--gray">
   <div class="container">
     <div class="quote">
       <div class="quote__item fade">
@@ -417,9 +417,79 @@
                 </div>
             </div>
         </div>
-    </div><!-- /.works -->
+    </div>
+</section>
+<section class="section section--gray">
+  <div class="container">
+    <div class="quote">
+      <div class="quote__item fade">
+        <img class="quote__photo" src="https://placehold.it/145" alt="">
+        <div class="quote__text">
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+        </div>
+        <div class="quote__author">Jon Doe</div>
+      </div>
+      <div class="quote__item fade">
+        <img class="quote__photo" src="https://placehold.it/145" alt="">
+        <div class="quote__text">
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+        </div>
+        <div class="quote__author">Doe Jon</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
 </section>
 
+<section class="section  section--clients">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">Happy Clients</h3>
+            <h2 class="section__title">What people say</h2>
+        </div>
+
+        <div class="clients">
+            <div class="clients__item">
+                <img class="clients__photo" src="assets/images/clients/1.png" alt="">
+                <div class="clients__content">
+                    <div class="clients__name">Matthew Dix</div>
+                    <div class="clients__prof">Graphic Design</div>
+                    <div class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+                </div>
+            </div>
+
+            <div class="clients__item">
+                <img class="clients__photo" src="assets/images/clients/2.png" alt="">
+                <div class="clients__content">
+                    <div class="clients__name">Nick Karvounis</div>
+                    <div class="clients__prof">Graphic Design</div>
+                    <div class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+                </div>
+            </div>
+
+            <div class="clients__item">
+                <img class="clients__photo" src="assets/images/clients/3.png" alt="">
+                <div class="clients__content">
+                    <div class="clients__name">Jaelynn Castillo </div>
+                    <div class="clients__prof">Graphic Design</div>
+                    <div class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+                </div>
+            </div>
+
+            <div class="clients__item">
+                <img class="clients__photo" src="assets/images/clients/4.png" alt="">
+                <div class="clients__content">
+                    <div class="clients__name">Mike Petrucci</div>
+                    <div class="clients__prof">Graphic Design</div>
+                    <div class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+                </div>
+            </div>
+        </div><!-- /.clients -->
+
+    </div><!-- /.container -->
+</section>
 
 <script>
 // Accordion
@@ -460,7 +530,7 @@ function showSlides(n) {
     //     dots[i].className = dots[i].className.replace(" active", "");
     // }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    // dots[slideIndex-1].className += " active";
 }
 var slideIndex = 0;
 showSlides();
